@@ -57,3 +57,50 @@ pre {
   border-radius: 0.75rem;
   white-space: pre-wrap;
 }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 250px;
+  height: 100%;
+  background-color: #1f2937;
+  color: white;
+  padding: 1rem;
+  transition: left 0.3s ease;
+  z-index: 10;
+}
+.sidebar h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar li {
+  margin: 0.5rem 0;
+}
+.sidebar a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+.sidebar a:hover {
+  text-decoration: underline;
+}
+.sidebar.show {
+  left: 0;
+}
+.menu-btn {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  z-index: 20;
+}

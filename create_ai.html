@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Photo/Video AI</title>
+  <title>Create AI Agent</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
@@ -15,12 +16,6 @@
       <li><a href="create_ai.html">Create AI</a></li>
       <li><a href="architect.html">Architect AI</a></li>
       <li><a href="memory.html">Memory AI</a></li>
-      <li><a href="tile_finder.html">Tile Finder AI</a></li>
-      <li><a href="digital_work.html">Digital Work AI</a></li>
-      <li><a href="social_media.html">Social Media AI</a></li>
-      <li><a href="photo_video_ai.html">Photo/Video AI</a></li>
-      <li><a href="self_updater.html">Self-Updater</a></li>
-      <li><a href="security_ai.html">Security AI</a></li>
     </ul>
   </div>
 
@@ -28,11 +23,12 @@
 
   <div class="card">
     <img src="icon.png" alt="Zifah Face" class="zifah-face" />
-    <h1>Photo/Video AI</h1>
-    <p>Welcome, Commander Huzaifah. Zifah is ready.</p>
-    <input type="text" id="commandInput" placeholder="Type your command here..." />
-    <button onclick="processCommand()">Run</button>
-    <pre id="responseBox">Awaiting your command...</pre>
+    <h1>Create New AI</h1>
+    <p>Name your AI and define its abilities</p>
+    <input type="text" id="aiName" placeholder="AI Name (e.g., VideoBot)" />
+    <textarea id="aiAbilities" rows="4" placeholder="Abilities (e.g., edit video, generate thumbnail)"></textarea>
+    <button onclick="createAIAgent()">Create AI Agent</button>
+    <pre id="responseBox">Waiting for your input...</pre>
   </div>
 </body>
 </html>

@@ -16,3 +16,29 @@ function processCommand() {
     responseBox.innerText = "Error talking to Zifah: " + error;
   });
 }
+
+function toggleSidebar(e) {
+  e.stopPropagation();
+  const sidebar = document.getElementById('sidebar');
+  sidebar.classList.toggle('show');
+}
+function closeSidebar(e) {
+  const sidebar = document.getElementById('sidebar');
+  if (!sidebar.contains(e.target)) {
+    sidebar.classList.remove('show');
+  }
+}
+
+function createAIAgent() {
+  const name = document.getElementById('aiName').value.trim();
+  const abilities = document.getElementById('aiAbilities').value.trim();
+  const responseBox = document.getElementById('responseBox');
+
+  if (!name || !abilities) {
+    responseBox.innerText = "Please enter both AI name and abilities.";
+    return;
+  }
+
+  responseBox.innerText = "Creating AI agent '" + name + "' with abilities: " + abilities + "...
+(Feature in simulation: real file generation will happen on backend)";
+}

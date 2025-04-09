@@ -1,21 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Self-Updater AI</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
-<body>
+<body onclick="closeSidebar(event)">
+  <div class="sidebar" id="sidebar">
+    <h2>Zifah Modules</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="create_ai.html">Create AI</a></li>
+      <li><a href="architect.html">Architect AI</a></li>
+      <li><a href="memory.html">Memory AI</a></li>
+      <li><a href="tile_finder.html">Tile Finder AI</a></li>
+      <li><a href="digital_work.html">Digital Work AI</a></li>
+      <li><a href="social_media.html">Social Media AI</a></li>
+      <li><a href="photo_video_ai.html">Photo/Video AI</a></li>
+      <li><a href="self_updater.html">Self-Updater</a></li>
+      <li><a href="security_ai.html">Security AI</a></li>
+    </ul>
+  </div>
+
+  <button class="menu-btn" onclick="toggleSidebar(event)">☰</button>
+
   <div class="card">
     <img src="icon.png" alt="Zifah Face" class="zifah-face" />
     <h1>Self-Updater AI</h1>
-    <p>Welcome, Commander Huzaifah. Zifah module is online.</p>
-    <input type="text" id="commandInput" placeholder="Type a command related to this module" />
+    <p>Welcome, Commander Huzaifah. Zifah is ready.</p>
+    <input type="text" id="commandInput" placeholder="Type your command here..." />
     <button onclick="processCommand()">Run</button>
-    <pre id="responseBox">Awaiting command...</pre>
+    <pre id="responseBox">Awaiting your command...</pre>
   </div>
 </body>
 </html>
