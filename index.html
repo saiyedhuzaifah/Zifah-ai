@@ -1,1 +1,20 @@
-<!DOCTYPE html><html><head><title>index</title></head><body><h1>Zifah Main Interface</h1><p>Type a command and Zifah will respond.</p></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zifah Main Interface</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Zifah Main Interface</h1>
+    <p>Type a command and Zifah will respond intelligently.</p>
+    <input type="text" id="commandInput" placeholder="e.g., build an app, find tile shop" />
+    <button onclick="processCommand()">Run</button>
+    <pre id="responseBox">Waiting for your command...</pre>
+  </div>
+</body>
+</html>
